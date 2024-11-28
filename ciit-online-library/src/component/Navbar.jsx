@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Navbar.css"
 import ciitlogo from "../images/ciit-logo.png"
-import {Link} from "react-router-dom"
+import {NavLink, Link} from "react-router-dom"
 
 export default function Navbar() {
   return (
@@ -17,7 +17,7 @@ export default function Navbar() {
           <Link className='link' to="/"><a class="nav-link active" aria-current="page" href="#">Home</a></Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Browse Catalog</a>
+          <Link className='link' to="/catalog"><a class="nav-link active" href="#">Browse Catalog</a></Link>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -27,6 +27,7 @@ export default function Navbar() {
             <li><a class="dropdown-item" href="#">Artwork Scanning Services</a></li>
             <li><a class="dropdown-item" href="#">Screen Calibration Services</a></li>
             <li><a class="dropdown-item" href="#">Library Cubicle Reservation</a></li>
+            <li><a class="dropdown-item" href="#">Borrow a Book</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -40,7 +41,9 @@ export default function Navbar() {
           </ul>
         </li>
         <li class="nav-item">
-            <button type="button" class="btn login">LOGIN</button>
+                <NavLink to="/login">
+                  <button type="button" class="btn login">LOGIN</button>
+                </NavLink>
         </li>
       </ul>
     </div>

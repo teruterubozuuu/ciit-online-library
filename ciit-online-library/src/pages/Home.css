@@ -1,53 +1,22 @@
-.library-bg{
-    width:100%;
+.home-parent-container{
+
+   margin:30px 200px;
+}
+
+.home-content-parent h2{
+    font-size:2.2rem;
+    font-weight:700;
+    color:#00364D;
+}
+
+.fb-covers{
+    width:200px;
     height:auto;
 }
 
-.library-header-parent{
-    position:relative;
-    width: 100%; 
+@media screen and (min-width:2500px){
+    .fb-covers{
+        width:350px;
+        height:auto;
+    }
 }
-
-.library-header-child {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-.ciit-library-logo{
-    width:60%;
-    height:auto;
-}
-
-.search-bar{
-    border-radius: 3px;
-    border:none;
-    padding: 10px 10px 10px 40px;
-    margin:25px 0;
-    width:100%;
-    background-color: rgba(255, 255, 255, 0.815);
-    height:auto;
-}
-
-.search-bar-cont {
-    position: relative;
-    display: inline-block;
-    width: 100%; 
-    max-width: 600px; 
-  }
-  
-  .search-bar-cont .bi-search {
-    position: absolute;
-    top: 50%;
-    left: 10px; 
-    transform: translateY(-50%);
-    color: #8d8d8d; 
-    font-size: 1.2em;
-  }
-  
-  .search-bar:focus {
-    border-color: #007bff; 
-  }
-  
